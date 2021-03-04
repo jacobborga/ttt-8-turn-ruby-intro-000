@@ -28,7 +28,7 @@ def position_taken?(board, index)
   return true
 end
 
-def move(board, index, player)
+def move(board, index, player="X")
   board[index] = player
 end
 
@@ -37,6 +37,6 @@ def turn(board)
   user_input = gets.chomp
   user_input = input_to_index(user_input)
   if valid_move(board, index)
-
+    move(board, index, )
   end
 end
