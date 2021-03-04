@@ -36,4 +36,9 @@ def turn(board)
   puts "Please enter 1-9:"
   user_input = gets.chomp
   user_input = input_to_index(user_input)
+  if user_input.between(1, 9)
+    move(board, user_input)
+  end
+  puts "Please enter a valid input"
+  turn(board)
 end
