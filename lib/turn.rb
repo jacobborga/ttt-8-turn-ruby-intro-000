@@ -30,7 +30,7 @@ end
 
 def move(board, index, player)
   if valid_move(board, index)
-    
+
   end
   return nil
 end
