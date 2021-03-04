@@ -29,14 +29,14 @@ def position_taken?(board, index)
 end
 
 def move(board, index, player)
-  if valid_move(board, index)
-
-  end
-  return nil
+  board[index] = player
 end
 
 def turn(board)
   puts "Please enter 1-9:"
   user_input = gets.chomp
   user_input = input_to_index(user_input)
+  if valid_move(board, index)
+    
+  end
 end
