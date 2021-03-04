@@ -39,6 +39,5 @@ def turn(board)
   if user_input.between(1, 9)
     move(board, user_input)
   end
-  puts "Please enter a valid input"
-  turn(board)
+
 end
