@@ -10,7 +10,19 @@ def input_to_index(user_input)
 end
 
 def valid_move?(board, index)
+  if index > 8 || index < 0
+    return false
+  end
+  if position_taken?(board, index)
+    return false
+  end
+  return true
+end
+
+def position_taken?(board, index)
   if board[index] == " " || board[index] == "" || board[index] == nil
+    return false
+  elsif board[index] == " X " || board[index] == " O "
     return false
   end
   return true
